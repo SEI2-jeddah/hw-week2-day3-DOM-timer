@@ -10,11 +10,15 @@
 
   <h1 id="timer">Stop Watch</h1>
   <div class="controls">
-    <button id="reset">Reset</button>
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+    <!-- <button id="reset">Reset</button> -->
+    <button id="start" onclick="setInterval(startClock,1000)">Start</button>
+    <button id="pause" onclick="clear()">Pause</button>
   </div>
-
+  <div id="clock">
+      <div id="hour_hand"><img src="/assets/img/hour_hand.png" alt="hour_hand"/></div>
+      <div id="minute_hand"><img src="/assets/img/minute_hand.png" alt="minute_hand"/></div>
+      <div id="second_hand"><img src="/assets/img/second_hand.png" alt="second_hand"/></div>
+    </div>
 </body>
 <script src="timers.js"></script>
 </html>
