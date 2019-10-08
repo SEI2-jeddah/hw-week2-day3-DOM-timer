@@ -5,24 +5,27 @@ var reset = document.querySelector("#reset");
 var start = document.querySelector("#start");
 var pause = document.querySelector("#pause");
 
-reset.addEventListener("click", "reset");
-start.addEventListener("click", "start");
-pause.addEventListener("click", "pause");
+reset.addEventListener("click", "resetClick");
+start.addEventListener("click", "startClick");
+pause.addEventListener("click", "pauseClick");
 
 var seconds;
 var timerId;
 
 function updateTime(){
-    timer.innerHTML = ("Time Elapsed: " + seconds)
+    
+    timer.innerHTML = ( increments + seconds)
 }
-function start(){
-    timer.innerHTML = ("Time Elapsed: " + seconds)
+function startClick(){
+    
+    seconds += 1
     timeId = setInterval(updatetime, 1000)
+    timer.innerHTML = (seconds)
 }
-function pause(){
+function pauseClick(){
     clearInterval(timeId)
 }
-function reset(){
+function resetClick(){
     clearInterval(timeId)
     timer.innerHTML = ("Stop Watch")
 }
