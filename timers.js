@@ -21,7 +21,7 @@ var watch = (function(){
   function buildTimer () {
     seconds++;
  
-    time.textContent =  (seconds < 10 ? "0" + seconds.toString(): seconds);
+    time.textContent =  (seconds < 10 ? " " + seconds.toString(): seconds);
   }
   function stopTimer () {
     pause.addEventListener("click", function(){
