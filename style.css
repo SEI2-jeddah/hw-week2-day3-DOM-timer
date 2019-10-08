@@ -33,8 +33,8 @@ button:hover{
   width: 378px;
   height: 378px;
   background-image: url('/assets/img/clock_face.jpg');
-  left: 50%;
-  margin: 5em 0 0 -189px;
+  background-repeat: no-repeat;
+  margin:auto;
 }
 
 #clock div {

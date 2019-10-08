@@ -8,11 +8,12 @@
 </head>
 <body>
 
-  <h1 id="timer">Stop Watch</h1>
+  <!--I made the time elpased count the seconds after u pushed the start button-->
+  <h1 id="timer">Analouge Clock</h1>
   <div class="controls">
     <!-- <button id="reset">Reset</button> -->
-    <button id="start" onclick="setInterval(startClock,1000)">Start</button>
-    <button id="pause" onclick="clear()">Pause</button>
+    <button id="start" onclick="start()">Start</button>
+    <button id="pause" onclick="clearInt()">Pause</button>
   </div>
   <div id="clock">
       <div id="hour_hand"><img src="/assets/img/hour_hand.png" alt="hour_hand"/></div>
