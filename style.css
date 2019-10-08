@@ -30,8 +30,8 @@ button:hover{
 
 #clock {
   position: relative;
-  width: 378px;
-  height: 378px;
+  width: 400px;
+  height: 400px;
   background-image: url('/assets/img/clock_face.jpg');
   background-repeat: no-repeat;
   margin:auto;
