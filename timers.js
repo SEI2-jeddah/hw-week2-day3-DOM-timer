@@ -1,31 +1,33 @@
 
-var timer = document.querySelector("#timer")
-var controls = document.querySelector(".controls")
-var reset = document.querySelector("#reset");
-var start = document.querySelector("#start");
-var pause = document.querySelector("#pause");
-
+var timer = document.getElementById("#timer")
+var reset = document.getElementById("#reset");
+var start = document.getElementById("#start");
+var pause = document.getElementById("#pause");
 reset.addEventListener("click", "resetClick");
 start.addEventListener("click", "startClick");
 pause.addEventListener("click", "pauseClick");
+timer.addEventListener("click", "timerClick");
 
 var seconds;
 var timerId;
 
 function updateTime(){
     
-    timer.innerHTML = ( increments + seconds)
+// imer.innerText = ( "Time Elapsed: " + seconds)
 }
 function startClick(){
     
     seconds += 1
-    timeId = setInterval(updatetime, 1000)
-    timer.innerHTML = (seconds)
-}
+    timeId = setInterval(function(){
+        timer.innerText = "Time Elapsed: " + seconds 
+        seconds++;
+    }, 1000)
+    }
 function pauseClick(){
-    clearInterval(timeId)
+    clearInterval(timeId);
 }
 function resetClick(){
-    clearInterval(timeId)
-    timer.innerHTML = ("Stop Watch")
-}
+    seconds = 0
+    timer.innerText = "Stop Watch";
+    clearInterval(timeId);
+  }
