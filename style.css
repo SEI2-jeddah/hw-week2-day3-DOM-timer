@@ -9,10 +9,14 @@ h1 {
   font-family: Josefin Slab;
   font-size: 72px;
   text-align: center;
+  margin: 0 auto;
+  padding: 20px 25px;
+  width: 500px;
+  height: 100px;
 }
 
 button {
-  background: #4479BA;
+  background: lightblue;
   color: #FFF;
   font-family: Josefin Slab;
   font-size: 50px;
@@ -20,11 +24,28 @@ button {
   border: 1px solid black;
   margin: 20px;
   padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 2px 2px black;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  /*background-image: radial-gradient(pink,lightblue); */
+  
+}
+
+p {
+  margin: 30px;
+  font-size: 100px;
+  color: white;
 }
 
 button:hover{
-    background: #356094;
+    background: pink;
 }
 
+.digitalStopWatch{
+  width: 500px;
+  height: 200px;
+  border: 10px solid pink;
+  border-radius: 10px;
+  border-image: radial-gradient(blue,lightblue,pink)1;
+  margin: auto auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

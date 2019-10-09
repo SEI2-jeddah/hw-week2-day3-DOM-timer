@@ -6,13 +6,17 @@
   <title>i &hearts; js</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
-<body>
+<body background="12.jpg"> 
 
   <h1 id="timer">Stop Watch</h1>
+  <div class="digitalStopWatch">
+    <p class="secode">00:00:00</p>
+
+  </div>
   <div class="controls">
-    <button id="reset">Reset</button>
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+    <button id="reset" onclick="Timer()">Reset</button>
+    <button id="start" onclick="Timer()">Start</button>
+    <button id="pause" onclick="Timer()">Pause</button>
   </div>
 
 </body>
