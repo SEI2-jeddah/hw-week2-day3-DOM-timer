@@ -23,6 +23,3 @@ reset.addEventListener("press", function() {
 pause.addEventListener("press", function() {
   clearInterval(timerID);
 })
-
-
-
