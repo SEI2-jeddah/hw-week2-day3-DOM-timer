@@ -1,30 +1,33 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
+body {
+  background-image: url("bg.gif");
+}
 .controls {
   margin: 50px;
   text-align: center;
 }
-
 h1 {
-  font-family: Josefin Slab;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 72px;
   text-align: center;
+  size:25px;
+  color: yellow;
+  text-shadow:30px, black;  
 }
-
 button {
-  background: #4479BA;
-  color: #FFF;
-  font-family: Josefin Slab;
+  background: lightpink;
+  color: yellow;
   font-size: 50px;
   text-align: center;
-  border: 1px solid black;
-  margin: 20px;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 2px 2px black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;  
+}
+button:hover{
+    background:white;
 }
 
-button:hover{
-    background: #356094;
-}
+
+ 
 
